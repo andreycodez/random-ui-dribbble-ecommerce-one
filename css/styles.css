@@ -13,6 +13,7 @@
 .sideBar {
   width: 300px;
   min-width: 300px;
+  padding: 60px 30px;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -28,4 +29,53 @@
   border-bottom: 3px solid blue;
 }
 
+.sideBarNavigation,
+.quickActionsList,
+.ordersList {
+  display: flex;
+  flex-direction: column;
+}
 
+.sideBarNavigation li {
+  list-style-type: none;
+}
+
+.sideBarNavigation li a {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  text-decoration: none;
+  color: #010101;
+  height: 60px;
+  padding: 30px;
+  border-radius: 30px;
+}
+
+.sideBarNavigation li a:hover {
+  background: #2564FE;
+  color: white;
+}
+
+.sideBarNavigation li a i {
+  font-size: 20px;
+}
+
+.divider {
+  height: 1px;
+  background: #f2f2f2;
+}
+
+.quickActions {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.smallHeader {
+  color: #a2a2a2;
+  font-size: 16px;
+}
+
+.smallHeader span {
+  color: #010101;
+}
